@@ -1,8 +1,7 @@
-// function greet(name){
-//  return 'Hello, ' + name;
-// }
 
-function greet (name){
-    return 'Hello, ' + name;
+ return 'Hello, ' + name;
 }
-export default greet
+console.log(greet('Janine'));
+
+var msg = greet('Xola')
+console.log(msg)
