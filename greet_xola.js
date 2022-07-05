@@ -1,10 +1,12 @@
-// const greet = require('./greet');
-
-// console.log(greet('Xola'))
-import chalk from 'chalk';
-
+const chalk = require('chalk');
 //import the greet module that is in the current folder
-import greet from './greet.js';
+let greet = require('./greet.js');
 
-const styledMessage = chalk.bgGreen.black(greet('Xola'));
-console.log(styledMessage)
+const figlet = require ('figlet')
+// console.log(greet('zee'));
+let message = greet('Makho');
+var output =chalk.red(
+    figlet.textSync( message, {horizontalLayout:'full'})
+)
+//const styledMessage = chalk.bgGreen.black(greet('Xola'));
+console.log(output)
